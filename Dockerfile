@@ -4,11 +4,8 @@ ENV TZ=Asia/Dhaka
 ARG DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends \
-    
+    apt-get install -y --no-install-recommends 
 
-
-COPY requirements.txt 
 RUN pip install -U -r requirements.txt
 RUN mkdir /ndfwdbot
 WORKDIR /ndfwdbot
