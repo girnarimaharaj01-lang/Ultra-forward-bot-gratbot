@@ -5,7 +5,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends 
-
+RUN pip install --no-cache-dir -U pip wheel==0.45.1
 RUN pip install -U -r requirements.txt
 RUN mkdir /ndfwdbot
 WORKDIR /ndfwdbot
