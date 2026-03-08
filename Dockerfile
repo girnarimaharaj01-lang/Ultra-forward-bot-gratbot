@@ -10,6 +10,8 @@ RUN pip install -U -r requirements.txt
 RUN mkdir /ndfwdbot
 WORKDIR /ndfwdbot
 COPY . /ndfwdbot
+COPY start.sh /start.sh
+CMD ["/bin/bash", "/start.sh"]
 
 
 CMD gunicorn app:app & python3 bot.py
