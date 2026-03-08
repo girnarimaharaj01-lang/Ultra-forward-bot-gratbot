@@ -1,8 +1,8 @@
-pyrofork==2.3.45
-motor
+pyrofork
 TgCrypto
 pyropatch
-humanize 
+humanize
+motor
 Dnspython
 pymongo[srv]==3.12.3
 umongo==3.0.1
