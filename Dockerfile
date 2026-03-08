@@ -10,7 +10,7 @@ COPY . /ndfwdbot
 
 CMD gunicorn app:app & python3 bot.py
 
-CMD flask run -h 0.0.0.0 -p 5000 & python3 -m ggn
+CMD flask run -h 0.0.0.0 -p 5000 
 
 
 
